@@ -20,5 +20,5 @@ Given /^my food has (\d+) grams of fiber$/ do |fiber|
 end
 
 Then /^my food should have a points value of (\d+)$/ do |points|
-  @calculator.points == 2
+  pending
 end
