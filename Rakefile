@@ -1,9 +1,6 @@
-require 'jasmine'
 require 'webrick'
 
-load 'jasmine/tasks/jasmine.rake'
-
-task :default => ["jasmine:ci", "cuke"]
+task :default => ["cuke"]
 
 task :cuke do
   

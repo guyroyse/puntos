@@ -1,16 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<script language="javascript" src="calculator.js"></script>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="calculator.css" />
 </head>
 
 <body>
 
-<input type="text" id="protein" />
-<input type="text" id="carbs" />
-<input type="text" id="fat" />
-<input type="text" id="fiber" />
-<div id="points">2</div>
+<h1>Puntos</h1>
+
+<div id="page">
+	<div class="label">Protein</div>
+	<div class="input"><input type="number" id="protein" /></div>
+	<div class="label">Carbs</div>
+	<div class="input"><input type="number" id="carbs" /></div>
+	<div class="label">Fat</div>
+	<div class="input"><input type="number" id="fat" /></div>
+	<div class="label">Fiber</div>
+	<div class="input"><input type="number" id="fiber" /></div>
+</div>
+
+<div class="button"><input type="button" id="calculate" value="Calculate Points"/></div>
+
+<div class="total">Total Points: <span id="points">0</span></div>
+
+<script language="javascript" src="jquery.js"></script>
+<script language="javascript" src="calculator.js"></script>
 
 </body>
 
