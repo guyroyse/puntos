@@ -3,7 +3,7 @@ class CalculatorPage
     @browser = browser
   end
   def visit
-    @browser.goto 'http://localhost:4567/calculator.html'
+    @browser.goto 'http://localhost:4567/'
   end
   def set_field(id, value)
     @browser.text_field(:id, id).set(value)
